@@ -8,6 +8,5 @@ Powered by HubSpot workflow, when a company record is created, this custom Pytho
 ## Workflow
 <img width="379" alt="Screenshot 2024-12-08 at 2 23 39 PM" src="https://github.com/user-attachments/assets/660242f3-5187-4c41-af53-2a6b9268512c">
 
-## Follow install steps from the DEMO video
-
-<div style="position: relative; padding-bottom: 64.61077844311377%; height: 0;"><iframe src="https://www.loom.com/embed/1af8529374b043199e34828b456fb92d?sid=831b5e42-d207-47e7-8ae2-bf54903eca76" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+## Install steps and DEMO
+[Loom Video](https://www.loom.com/share/1af8529374b043199e34828b456fb92d?sid=fe4d5bd2-b4f2-4365-85d7-f4474a8178ea)
