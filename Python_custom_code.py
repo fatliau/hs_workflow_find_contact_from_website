@@ -66,7 +66,7 @@ def find_contact_emails_aws_lambda(website_url):
 
     def email_filter(emails):
         ignored_domains = {'@example.com', 'wixpress.com', '@domain.com', '@godaddy.com', '@mystore.com',
-                           'mysite.com', '@email.com'}
+                           'mysite.com', '@email.com', 'clyffordstillmuseum.org'}
         return set(filter(lambda s: not any(domain in s for domain in ignored_domains), emails))
 
 
@@ -106,6 +106,11 @@ def main(event):
 
     # Extract email
     email = find_contact_emails_aws_lambda(website_url)
+    if not email:
+        return {
+            "statusCode": 404,
+            "body": "No email found for the given website."
+        }
 
     # Return outputs to HubSpot workflow
     return {
