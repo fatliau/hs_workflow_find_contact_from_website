@@ -10,3 +10,6 @@ Powered by HubSpot workflow, when a company record is created, this custom Pytho
 
 ## Install steps and DEMO
 [Loom Video](https://www.loom.com/share/1af8529374b043199e34828b456fb92d?sid=fe4d5bd2-b4f2-4365-85d7-f4474a8178ea)
+
+## Other Technical Details
+* Class LinkParser is to replace BeautifulSoup since it is not supported in HubSpot workflow Python custom code :(
