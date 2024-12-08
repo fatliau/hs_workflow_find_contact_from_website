@@ -28,7 +28,7 @@ class LinkParser(HTMLParser):
         return self.links
 
 
-def find_contact_emails_aws_lambda(website_url):
+def find_a_contact_email(website_url):
     def ensure_valid_url(url):
         parsed_url = urlparse(url)
         # Check if the scheme is missing and add 'https' as default if necessary
@@ -66,7 +66,7 @@ def find_contact_emails_aws_lambda(website_url):
 
     def email_filter(emails):
         ignored_domains = {'@example.com', 'wixpress.com', '@domain.com', '@godaddy.com', '@mystore.com',
-                           'mysite.com', '@email.com', 'clyffordstillmuseum.org'}
+                           'mysite.com', '@email.com'}
         return set(filter(lambda s: not any(domain in s for domain in ignored_domains), emails))
 
 
@@ -105,7 +105,7 @@ def main(event):
         }
 
     # Extract email
-    email = find_contact_emails_aws_lambda(website_url)
+    email = find_a_contact_email(website_url)
     if not email:
         return {
             "statusCode": 404,
