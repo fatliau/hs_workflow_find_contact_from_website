@@ -13,3 +13,4 @@ Powered by HubSpot workflow, when a company record is created, this custom Pytho
 
 ## Other Technical Details
 * Class LinkParser is to replace BeautifulSoup since it is not supported in HubSpot workflow Python custom code :(
+* Email link from popular website hosting service is filtered(ex: wixpress.com, godaddy.com, mysite.com, etc.)
